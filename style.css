@@ -81,14 +81,14 @@ header{
     font-size: 1.2em;
     border: none;
     outline: none;
-    background: #000009d8;
+    background:#8b0000ac;
     color: #fff;
     cursor: pointer;
     transition: background 0.1s ease-in-out;
 }
 
 .about .about-txt button:hover{
-    background:#8b0000ac;
+    background: #000009d8;
     transition: background 0.1s ease-in-out;
 }
 
@@ -211,7 +211,7 @@ header{
         width: 50%;
         height: 100%;
         top:0;
-        right:-230px;
+        right:-350px;
         transition: right 0.6s ease-in-out;
         z-index: 900;
     }
