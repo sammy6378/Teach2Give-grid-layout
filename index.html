@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Flexbox Layout</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="./assets/images/logo.svg" alt="logoimage">
+        </div>
+        <div class="menu">
+            <img src="./assets/images/icon-menu.svg" alt="">
+        </div>
+        <ul class="nav-links">
+            <div class="close">
+            <img src="./assets/images/icon-menu-close.svg" alt="">
+        </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+        
+    </nav>
+   
+
+    <header class="header">
+        <div class="container">
+            <div class="flex-left">
+                <img src="./assets/images/image-web-3-desktop.jpg" alt="desktop img">
+                <div class="about">
+                    <h2>The Bright Future Of Web 3.0?</h2>
+                    <div class="about-txt">
+                        <p>We dive into the next evolution of the web that claims to put the power
+                            of the platforms back into the hands of the people.But is it really fulfilling it's promise?
+                        </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <div class="content">
+                    <h1>New</h1>
+                    <div class="link">
+                        <a href="#">Hygrogen Vs Electric cars</a>
+                        <p>Will hygrogen-fueled-cars ever catch up to EVs</p>
+                    </div>
+                    <hr>
+                    <div class="link">
+                        <a href="#">The DownSides of AI Artistry </a>
+                        <p>What are teh possible adverse effects of on-demand Ai image generation?</p>
+                    </div>
+                    <hr>
+                    <div class="link">
+                        <a href="#">Is VC funding Drying Up?</a>
+                        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="blogs">
+            <div class="blog-1">
+                <img src="./assets/images/image-retro-pcs.jpg" alt="">
+                <div class="text">
+                    <span>01</span>
+                    <a href="#">Reviving Retro PCs</a>
+                    <p>
+                        What happens when old Pcs are given modern Upgrades?
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-1">
+                <img src="./assets/images/image-top-laptops.jpg" alt="">
+                <div class="text">
+                    <span>02</span>
+                    <a href="#">Top 10 Laptops of 2022</a>
+                    <p>
+                        Our best picks for various needs of Budgets.
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-1">
+                <img src="./assets/images/image-gaming-growth.jpg" alt="">
+                <div class="text">
+                    <span>03</span>
+                    <a href="#">The growth of Gaming</a>
+                    <p>
+                        How the pandemic has sparked fresh opportunities
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        const bar = document.querySelector('.menu img');
+        const header = document.querySelector('.header');
+        const menu = document.querySelector('.nav-links');
+        const close = document.querySelector('.close img');
+
+        bar.addEventListener('click',() =>{
+            menu.classList.toggle('menu-show');
+            header.classList.toggle('blur');
+        });
+
+        close.addEventListener('click',() =>{
+            menu.classList.remove('menu-show');
+            header.classList.remove('blur');
+        });
+    </script>
+</body>
+</html>
